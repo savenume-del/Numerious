@@ -93,20 +93,35 @@ getgenv().GAG2Config = {
         ["Super Watering Can"] = 9999,
         ["Super Sprinkler"] = 9999,
     },  
-    BUY_CRATE = {},  -- ["Crate Name"] = Amount
-    USE_SPRINKLER = {},  -- "Sprinkler Name"
+    BUY_CRATE = {},  -- [""] = Amount
+    USE_SPRINKLER = {},  -- ""
 
     -- Auto Mail
-    AUTO_MAIL_USERNAME = {},  -- "Username" (Randomized)
-    AUTO_MAIL_ITEM_NAME = {},  -- ["Item Name"] = Amount
+    AUTO_MAIL_USERNAME = {Numedump},  -- "Username" (Randomized)
+    AUTO_MAIL_ITEM_NAME = {
+        ["Rainbow"] = 1, 
+        ["Gold"] = 1, 
+        ["Monkey"] = 1, 
+        ["Bee"] = 1, 
+        ["Black Dragon"] = 1, 
+        ["Golden Dragonfly"] = 1, 
+        ["Unicorn"] = 1, 
+        ["Raccoon"] = 1, 
+        ["Ice Serpent"] = 1, 
+        ["Venus Fly Trap"] = 1, 
+        ["Pomegranate"] = 1, 
+        ["Poison Apple"] = 1, 
+        ["Moon Bloom"] = 1, 
+        ["Dragon's Breath"] = 1,
+    }, -- ["Item Name"] = Amount
     COLLECT_MAIL = true,
 
     -- Discord
     WEBHOOK_PET_NAME = {},
     WEBHOOK_PET_RARITY = { "Mythic", "Super", "Secret" },
-    WEBHOOK_URL = "",
-    DISCORD_ID = "",
-    WEBHOOK_NOTE = "",  -- Private Webhook
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1305114643106365480/FBgh175kYX57Ha03Ai_gpsHQ2iI4A8Eu4WgHr3eBmAaEY86ywmyf7n_on0HaCLNXZQNn",
+    DISCORD_ID = "1305122826860236800",
+    WEBHOOK_NOTE = "wow",  -- Private Webhook
     SHOW_PUBLIC_DISCORD_ID = true,
     SHOW_WEBHOOK_USERNAME = true,  -- Private Webhook
     SHOW_WEBHOOK_JOBID = true,  -- Private Webhook
