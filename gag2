@@ -1,41 +1,38 @@
 getgenv().GAG2Config = {
-    FPS_CAP = 5,  -- MUST USE 5+ FPS FOR TWEENING
+    FPS_CAP = 10,  -- MUST USE 5+ FPS FOR TWEENING
     AUTO_UPDATE_RESTART = true,
     COLLECT_FRUIT_DELAY = 20,
 
-    BUY_PET = {  -- ["Pet Name"] = Amount
-        ["Big Monkey"] = 99, 
-        ["Big Bee"] = 99, 
+    BUY_PET = {
         ["BlackDragon"] = 99, 
         ["GoldenDragonfly"] = 99, 
-        ["Unicorn"] = 99,
-        ["Bear"] = 99, 
+        ["Unicorn"] = 99, 
         ["Raccoon"] = 99, 
         ["IceSerpent"] = 99,
-        ["Huge Bunny"] = 5,
-        ["Huge Robin"] = 5,
+        ["Robin"] = 5,
+        ["Deer"] = 5,
     },
 
-    EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
+    EQUIP_PET = {
         {"Unicorn", 5, 1}, 
         {"GoldenDragonfly", 10, 2},
-        {"Huge Robin", 5, 3},   -- FIX: sebelumnya "Robin"
-        {"Huge Bunny", 5, 4},   -- FIX: sebelumnya "Bunny"
+        {"Robin", 5, 3},
+        {"Deer", 5, 4},
     },
 
-    PLANT_SEED = {  -- ["Seed Name"] = Amount
+    PLANT_SEED = {
         ["Carrot"] = 10, 
         ["Strawberry"] = 10,
         ["Blueberry"] = 10,
         ["Tulip"] = 10,
         ["Tomato"] = 10,
         ["Apple"] = 10,
-        ["Bamboo"] = 1000,
+        ["Bamboo"] = 100,
         ["Corn"] = 10,
         ["Cactus"] = 10,
         ["Pineapple"] = 10,
-        ["Mushroom"] = 500,
-        ["Green Bean"] = 50,
+        ["Mushroom"] = 50,
+        ["Green Bean"] = 0,
         ["Banana"] = 50,
         ["Grape"] = 50,
         ["Coconut"] = 50,
@@ -44,30 +41,30 @@ getgenv().GAG2Config = {
         ["Acorn"] = 50,
         ["Cherry"] = 50,
         ["Sunflower"] = 50,
-        ["Venus Fly Trap"] = 50,
-        ["Pomegranate"] = 50,
-        ["Poison Apple"] = 50,
-        ["Moon Bloom"] = 50,
-        ["Dragon's Breath"] = 50,
+        ["Venus Fly Trap"] = 0,
+        ["Pomegranate"] = 0,
+        ["Poison Apple"] = 0,
+        ["Moon Bloom"] = 0,
+        ["Dragon's Breath"] = 0,
     },
 
-    BUY_SEED = {  -- ["Seed Name"] = Amount
+    BUY_SEED = {
         ["Carrot"] = 10, 
         ["Strawberry"] = 4,
         ["Blueberry"] = 4,
         ["Tulip"] = 4,
         ["Tomato"] = 4,
         ["Apple"] = 4,
-        ["Bamboo"] = 500,
+        ["Bamboo"] = 100,
         ["Corn"] = 4,
         ["Cactus"] = 4,
         ["Pineapple"] = 4,
         ["Mushroom"] = 50,
-        ["Green Bean"] = 50,
+        ["Green Bean"] = 0,
         ["Banana"] = 50,
         ["Grape"] = 50,
         ["Coconut"] = 50,
-        ["Mango"] = 50,
+        ["Mango"] = 0,
         ["Dragon Fruit"] = 500,
         ["Acorn"] = 500,
         ["Cherry"] = 500,
@@ -81,46 +78,40 @@ getgenv().GAG2Config = {
 
     COLLECT_PLANT_IF_MUTATED = { "Bamboo", "Mushroom", "Green Bean" },
     FAVOURITE_FRUIT = {},
+
     SELL_ALL_DAILY_DEAL = true,
     SELL_ALL_DELAY = 20,
-
-    FOCUS_RAINBOW_GOLD_SEED = false,  -- FIX: sebelumnya true (matiin semua fungsi bot!)
-    MAX_PET_EQUIP = 6,                -- FIX: field ini hilang dari config GitHub
-    BUY_GEAR_MIN_SHECKLE = 1000000,   -- FIX: field ini hilang dari config GitHub
+    FOCUS_RAINBOW_GOLD_SEED = false,
     EXPAND_PLOT = 2,
-    USE_SPRINKLER = {"Common Watering Can", "Common Sprinkler"},  -- FIX: format salah (seharusnya list string)
+    BUY_GEAR = {["Common Watering Can"] = 2, ["Common Sprinkler"] = 2,},
+    BUY_CRATE = {},
+    USE_SPRINKLER = {"Common Sprinkler"},
 
-    BUY_GEAR = {  -- ["Gear Name"] = Amount
-        ["Super Watering Can"] = 9999,
-        ["Super Sprinkler"] = 9999,
-        ["Common Watering Can"] = 2,
-        ["Common Sprinkler"] = 1,
-    },
-    BUY_CRATE = {},  -- ["Crate Name"] = Amount
-
-    -- Auto Mail
     AUTO_MAIL_USERNAME = {"numedump"},
     AUTO_MAIL_ITEM_NAME = {
-        ["Rainbow"] = "All",          -- FIX: sebelumnya All tanpa quotes (nil di Lua)
-        ["Gold"] = "All",             -- FIX
-        ["Monkey"] = "All",           -- FIX
-        ["Bee"] = "All",              -- FIX
-        ["BlackDragon"] = "All",     -- FIX
-        ["GoldenDragonfly"] = "All", -- FIX
-        ["Unicorn"] = "All",          -- FIX
-        ["Raccoon"] = "All",          -- FIX
-        ["IceSerpent"] = "All",      -- FIX
-        ["Venus Fly Trap"] = "All",   -- FIX
-        ["Moon Bloom"] = "All",       -- FIX
-        ["Dragon's Breath"] = "All",  -- FIX
+        ["Rainbow"] = 1, 
+        ["Gold"] = 1, 
+        ["Monkey"] = 1, 
+        ["Bee"] = 1, 
+        ["BlackDragon"] = 1, 
+        ["GoldenDragonfly"] = 1, 
+        ["Unicorn"] = 1, 
+        ["Raccoon"] = 1, 
+        ["IceSerpent"] = 1, 
+        ["Venus Fly Trap"] = 1, 
+        ["Pomegranate"] = 1, 
+        ["Poison Apple"] = 1, 
+        ["Moon Bloom"] = 1, 
+        ["Dragon's Breath"] = 1,
+        ["Super Sprinkler"] = 1,
+        ["Super Watering Can"] = 1,
     },
     COLLECT_MAIL = true,
 
-    -- Discord
     WEBHOOK_PET_NAME = {},
     WEBHOOK_PET_RARITY = { "Mythic", "Super", "Secret" },
-    WEBHOOK_URL = "https://discord.com/api/webhooks/1305114643106365480/FBgh175kYX57Ha03Ai_gpsHQ2iI4A8Eu4WgHr3eBmAaEY86ywmyf7n_on0HaCLNXZQNn",
-    DISCORD_ID = "1305122826860236800",
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1345647402870243348/2qff9iJs2qGXAQtoifogDsn_KlPPDK1w2Z6TsfTWNYUlMQvw0MiodSJ8AyDe1bG68hAV",
+    DISCORD_ID = "1427596002998878259",
     WEBHOOK_NOTE = "gg",
     SHOW_PUBLIC_DISCORD_ID = false,
     SHOW_WEBHOOK_USERNAME = true,
