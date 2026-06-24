@@ -12,7 +12,6 @@ getgenv().GAG2Config = {
         ["Bear"] = 99, 
         ["Raccoon"] = 99, 
         ["IceSerpent"] = 99,
-        ["Robin"] = 5,
         ["Huge Bunny"] = 5,
         ["Huge Robin"] = 5,
     },
