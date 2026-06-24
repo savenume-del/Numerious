@@ -116,8 +116,8 @@ getgenv().GAG2Config = {
 
     WEBHOOK_PET_NAME = {},
     WEBHOOK_PET_RARITY = { "Mythic", "Super", "Secret" },
-    WEBHOOK_URL = "https://discord.com/api/webhooks/1515971898331369473/xFogqDTwRiLuV2cZ6Vbmy7nEm-ef82wT0zGNn4wikBRntTQZfjNxIZyPGmo7P42S_n00",
-    DISCORD_ID = "1515971969521291326",
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1345647402870243348/2qff9iJs2qGXAQtoifogDsn_KlPPDK1w2Z6TsfTWNYUlMQvw0MiodSJ8AyDe1bG68hAV",
+    DISCORD_ID = "1519159898045157611",
     WEBHOOK_NOTE = "gg",
     SHOW_PUBLIC_DISCORD_ID = false,
     SHOW_WEBHOOK_USERNAME = true,
