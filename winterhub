@@ -99,5 +99,3 @@ _G.GAGConfig = _G.GAGConfig or {
         ["Console"]     = false,   -- true / false  (also print log lines to the executor console). Or a list to filter, e.g. { "REPLACE", "ERROR" }
     },
 }
-
-local s,r repeat s,r=pcall(function()return game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/roblog/refs/heads/main/gag-obfuscated.lua")end)wait(1)until s;loadstring(r)()
