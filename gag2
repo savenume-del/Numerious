@@ -83,7 +83,7 @@ getgenv().GAG2Config = {
     SELL_ALL_DELAY = 20,
     FOCUS_RAINBOW_GOLD_SEED = true,
     EXPAND_PLOT = 3,
-    BUY_GEAR = {["Common Watering Can"] = 2, ["Common Sprinkler"] = 2, ["Super Sprinkler"] = 4, ["Super Watering Can"] = 2,},
+    BUY_GEAR = {["Common Watering Can"] = 2, ["Common Sprinkler"] = 2, ["Super Sprinkler"] = 500, ["Super Watering Can"] = 500,},
     BUY_CRATE = {},
     USE_SPRINKLER = {"Common Sprinkler"},
 
