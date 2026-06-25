@@ -9,38 +9,32 @@ _G.GAGConfig = _G.GAGConfig or {
     ["Planting"] = {
         ["Auto Plant"]  = true,               -- true / false  (false = never buy/plant; also stops expand/replace)
         ["Plant Plan"]  = {
-        ["Gold"] = 1000, 
         ["Carrot"] = 10, 
         ["Strawberry"] = 10,
-        ["Blueberry"] = 5,
+        ["Blueberry"] = 10,
         ["Tulip"] = 10,
         ["Tomato"] = 10,
         ["Apple"] = 10,
         ["Bamboo"] = 100,
-        ["Corn"] = 5,
-        ["Cactus"] = 5,
-        ["Pineapple"] = 5,
+        ["Corn"] = 10,
+        ["Cactus"] = 10,
+        ["Pineapple"] = 10,
         ["Mushroom"] = 100,
         ["Banana"] = 50,
         ["Grape"] = 50,
-        ["Coconut"] = 1000,
-        ["Mango"] = 1000,
-        ["Dragon Fruit"] = 500,
-        ["Acorn"] = 500,
-        ["Cherry"] = 500,
-        ["Sunflower"] = 500,
-        ["Venus Fly Trap"] = 500,
-        ["Pomegranate"] = 500,
-        ["Poison Apple"] = 500,
-        ["Moon Bloom"] = 500,
-        ["Dragon's Breath"] = 500,},                 -- e.g. { Apple = 50, ["Dragon Fruit"] = 20 }  (keep N planted, then auto-fill)
+        ["Coconut"] = 100,
+        ["Mango"] = 100,
+        ["Dragon Fruit"] = 100,
+        ["Acorn"] = 100,
+        ["Cherry"] = 100,
+        ["Sunflower"] = 100,},                 -- e.g. { Apple = 50, ["Dragon Fruit"] = 20 }  (keep N planted, then auto-fill)
         ["Only Plant"]  = {},                 -- e.g. { "Bamboo", "Apple" }  (plant ONLY these)
-        ["Layout"]      = "compact",          -- "compact" / "spread"
+        ["Layout"]      = "spread",          -- "compact" / "spread"
         ["Don't Plant"] = {},                 -- e.g. { "Carrot", "Green Bean" }
         ["Don't Buy"]   = {},                 -- e.g. { "Mango", "Coconut" }
         ["Keep Seeds"]  = {                   -- e.g. { ["Moon Bloom"] = 5, Gold = 15 }  (keep N UNPLANTED)
             ["Dragon's Breath"] = 5, ["Moon Bloom"] = 5,
-            ["Gold"] = 15, ["Rainbow"] = 5,
+            ["Gold"] = 15, ["Rainbow"] = 5, ["Venus Fly Trap"] = 5,
         },
     },
     ["Money"] = {
@@ -57,9 +51,9 @@ _G.GAGConfig = _G.GAGConfig or {
     },
     ["Pets"] = {
         ["Buy"]            = {},   -- list = tame UNLIMITED; OR caps { Robin = 6, Deer = 6 } = stop once you OWN N of that species; mix ok { "Unicorn", Deer = 6 }
-        ["Equip"]          = { Deer = 4 },    -- e.g. { Deer = 4, Unicorn = 1 }  (name = how many)
+        ["Equip"]          = { Deer = 6 },    -- e.g. { Deer = 4, Unicorn = 1 }  (name = how many)
         ["Auto Buy Slots"] = true,            -- true / false
-        ["Max Pet Slots"]  = 4,               -- number 3..6
+        ["Max Pet Slots"]  = 6,               -- number 3..6
     },
     ["Gear"] = {
         ["Auto Buy"]             = true,            -- true / false
@@ -67,8 +61,8 @@ _G.GAGConfig = _G.GAGConfig or {
         ["Sprinkler Coverage"]   = "concentrate",   -- "concentrate" / "value" / "spread"
         ["Place Sprinklers"]     = { ["best"] = 4 },          -- e.g. { ["best"] = 4 } or { ["Rare Sprinkler"] = 2 }
         ["Best Sprinkler Up To"] = "Common Sprinkler",          -- "Common/Uncommon/Rare/Super/Legendary Sprinkler"
-        ["Keep Gear"]            = { 	["Super Watering Can"] = 155, ["Super Sprinkler"] = 155, ["Super Watering Can"] = 155 },   -- e.g. { ["Trowel"] = 1 }  (buy & hold N)
-        ["Buy Gear"]             = { "Super Sprinkler", "Super Watering Can" },   -- e.g. { "Trowel" }  (buy & keep, never placed)
+        ["Keep Gear"]            = {  	["Super Watering Can"] = 5, ["Super Sprinkler"] = 5, ["Legendary Sprinkler"] = 5 },   -- e.g. { ["Trowel"] = 1 }  (buy & hold N)
+        ["Buy Gear"]             = { "Super Sprinkler", "Legendary Sprinkler", "Super Watering Can" },   -- e.g. { "Trowel" }  (buy & keep, never placed)
     },
     ["Event Seeds"] = {
         ["Auto Claim"] = true,       -- automatically grab seed packs that drop during events
@@ -76,8 +70,8 @@ _G.GAGConfig = _G.GAGConfig or {
     ["Mail"] = {
         ["Auto Claim"] = true,                -- true / false
         ["Send To"]    = "numedump",                  -- username to funnel items to ("" = off)
-        ["Send"]       = {
-            "Moon Bloom", "Dragon's Breath", "Gold", "Rainbow", "Venus Fly Trap", "GoldenDragonfly", "Unicorn", "Robin", "Raccoon", "Super Sprinkler", "Legendary Sprinkler", "Super Watering Can"
+        ["Send"]       = {                    -- e.g. { "Gold", "Deer", { Item = "Deer", Count = 5 } }  (equipped pets never sent)
+            "Moon Bloom", "Dragon's Breath", "Gold", "Rainbow", "Venus Fly Trap", "GoldenDragonfly", "Unicorn", "Raccoon", "Super Sprinkler", "Legendary Sprinkler", "Super Watering Can",
         },
     },
     ["Misc"] = {
