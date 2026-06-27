@@ -89,6 +89,7 @@ getgenv().GAG2Config = {
 
     AUTO_MAIL_USERNAME = {"numedump"},
     AUTO_MAIL_ITEM_NAME = {
+        ["Mega"] = 1,
         ["Gold"] = 1,
         ["Rainbow"] = 1, 
         ["Monkey"] = 1, 
