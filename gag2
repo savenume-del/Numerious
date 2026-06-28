@@ -87,7 +87,7 @@ getgenv().GAG2Config = {
     BUY_CRATE = {},
     USE_SPRINKLER = {"Common Sprinkler"},
 
-    AUTO_MAIL_USERNAME = {"numedump"},
+    AUTO_MAIL_USERNAME = {"numedump", "numerious0"},
     AUTO_MAIL_ITEM_NAME = {
         ["Mega"] = 1,
         ["Gold"] = 1,
