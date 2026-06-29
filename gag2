@@ -103,7 +103,7 @@ getgenv().GAG2Config = {
 
 
     -- Auto Mail
-    AUTO_MAIL = ["numedump"] = {
+    AUTO_MAIL = {["numedump"] = {
 	    ["Venus Fly Trap"] = "All",
         ["Venom Spitter"] = "All",
         ["Moon Bloom"] = "All",
@@ -118,7 +118,7 @@ getgenv().GAG2Config = {
         ["IceSerpent"] = "All", 
 	    ["Super Watering Can"] = "All",
         ["Super Sprinkler"] = "All",
-},  -- ["Username"] = { ["Item Name"] = Amount }
+}},  -- ["Username"] = { ["Item Name"] = Amount }
     AUTO_MAIL_DELAY = 120,  -- Seconds
     COLLECT_MAIL = true,
 
