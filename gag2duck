@@ -1,1 +1,135 @@
+getgenv().UserConfig = {
+    ["FPS Cap"] = 5,
+    ["Auto Double Or Nothing"] = false, -- change to true if you want to play double or nothing
+    ["Double Or Nothing Target Wins"] = 1,
+    ["Auto Add Friends"] = false, -- warning: easily triggers captcha and face verification, use with caution
+    ["Auto Buy Seed"] = true,
+    ["Auto Plant Seed"] = true,
+    ["Limit Plant Seed"] = { -- rarely used
+        ["Tulip"] = 1,
+    },
+    ["Limit Buy Seed"] = {
+        ["Carrot"] = 50, 
+        ["Strawberry"] = 5,
+        ["Blueberry"] = 5,
+        ["Tulip"] = 5,
+        ["Tomato"] = 5,
+        ["Apple"] = 5,
+        ["Bamboo"] = 300,
+        ["Corn"] = 5,
+        ["Cactus"] = 5,
+        ["Pineapple"] = 50, 
+        ["Mushroom"] = 100, 
+        ["Fire Fern"] = 5, 
+        ["Rocket Pop"] = 100, 
+        ["Green Bean"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Banana"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Grape"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Coconut"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Mango"] = 25, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Dragon Fruit"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Acorn"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Cherry"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Sunflower"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Venus Fly Trap"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Pomegranate"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Poison Apple"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Venom Spitter"] = 10, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Briar Rose"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Romanesco"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Moon Bloom"] = 100,
+        ["Hypno Bloom"] = 100,
+        ["Dragon's Breath"] = 100,
+    },
+    ["Blacklist Shovel"] = {"Mega", "Gold", "Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap", "Briar Rose", "Romanesco"},
+    ["Shovel Plant Once"] = {},
+    ["Favorite"] = {
+        -- ["Horned Melon"] = {"Rainbow", "Gold"},
+    }, 
+    ["Harvest Mutation Only"] = {
+    },
+    ["Buy Pets"] = {
+        ["Frog"] = {Huge = 99, Rainbow = 99},
+        ["Bunny"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
+        ["Turtle"] = {Huge = 99, Rainbow = 99},
+        ["Owl"] = {Huge = 99, Rainbow = 99},
+        ["Deer"] = {Huge = 99, Rainbow = 99},
+        ["Robin"] = {Huge = 99, Rainbow = 99},
+        ["Bee"] = {Huge = 99, Rainbow = 99},
+        ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
+        ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
+        ["Bald Eagle"] = 999,
+        ["Butterfly"] = 999,
+    },
+    ["Equip Pets"] = {
+        {"Bunny", 6, 1},
+    },
+    ["Expand Plot"] = true,
+    ["Plot Expansions"] = 3,
+    ["Unlock Pet Slots"] = 6,
+    ["Auto Collect Seed Packs"] = true,
+    ["Gears"] = {
+        ["Buy Gear"] = {
+            "Common Watering Can",
+            "Common Sprinkler",
+            "Legendary Sprinkler",
+            "Super Sprinkler",
+            "Super Watering Can",
+        },
+        ["Gears To Use"] = {
+            "Common Watering Can",
+            "Common Sprinkler",
+        },
+    },
+    
+    -- WEBHOOK CONFIGURATION (Replace the xxxx part with your Discord webhook link)
+    ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1516873518304722954/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    ["Webhook Pet Name"] = {"Golden Dragonfly","Unicorn","Raccoon","Monkey","Bee","Ice Serpent","Robin","Deer"},
+    ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
+    
+    ["Webhook Seed URL"] = "https://discord.com/api/webhooks/1521791543919378442/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    ["Webhook Seed Name"] = {"Rainbow", "Gold", "Mega", "Dragon's Breath", "Hypno Bloom", "Moon Bloom", "Briar Rose", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap"},
+    
+    ["Webhook Gear URL"] = "https://discord.com/api/webhooks/1521791670570582068/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    ["Webhook Gear Name"] = {"Super Sprinkler", "Super Watering Can", "Legendary Sprinkler"},
 
+    ["Webhook Note"] = "Enter_Your_Name",
+    ["Discord ID"] = "Enter_Your_Discord_ID",
+    
+    -- MAIL CONFIGURATION (Enter the exact Username of the receiving account)
+    ["Mail To Username"] = {"numedump"},
+    ["Items To Mail"] = {
+        ["Pet"] = {
+        ["Frog"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Bunny"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Turtle"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Owl"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Deer"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Robin"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Bee"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "numedump"},
+        },
+        ["Seed"] = {
+            ["Carrot"] = {Amount = 50, To = "numerious0"},
+            ["Mango"] = {Amount = 20, To = "numedump"},
+            ["Pineapple"] = {Amount = 20, To = "numedump"},
+            ["Rainbow"] = {Amount = 2, To = "numedump"},
+            ["Gold"] = {Amount = 5, To = "numedump"},
+            ["Mega"] = {Amount = 2, To = "numedump"},
+            ["Dragon's Breath"] = {Amount = 1, To = "numedump"},
+            ["Moon Bloom"] = {Amount = 1, To = "numedump"},
+		        ["Hypno Bloom"] = {Amount = 1, To = "numedump"},
+        },
+        ["Gear"] = {
+    		["Legendary Sprinkler"] = {Amount = 2, To = "numedump"},
+    		["Super Sprinkler"] = {Amount = 2, To = "numedump"},
+    		["Super Watering Can"] = {Amount = 2, To = "numedump"},
+        },
+    },
+    ["Claim Mail"] = true,
+    ["Auto Plant"] = true,
+    ["Limit Auto Plant"] = 500,
+    ["Blacklist Seed"] = {"Rainbow"}
+}
