@@ -121,7 +121,7 @@ getgenv().UserConfig = {
             ["Dragon's Breath"] = {Amount = 1, To = "numedump"},
             ["Moon Bloom"] = {Amount = 1, To = "numedump"},
 		    ["Hypno Bloom"] = {Amount = 1, To = "numedump"},
-        	["Venom Spitter"] = {Amount = 1, To = "numedump"},, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        	["Venom Spitter"] = {Amount = 1, To = "numedump"}, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         },
         ["Gear"] = {
     		["Legendary Sprinkler"] = {Amount = 2, To = "numedump"},
