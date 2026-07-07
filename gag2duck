@@ -18,7 +18,7 @@ getgenv().UserConfig = {
         ["Bamboo"] = 300,
         ["Corn"] = 5,
         ["Cactus"] = 5,
-        ["Pineapple"] = 50, 
+        ["Pineapple"] = 5, 
         ["Mushroom"] = 100, 
         ["Fire Fern"] = 5, 
         ["Rocket Pop"] = 100, 
@@ -26,7 +26,7 @@ getgenv().UserConfig = {
         ["Banana"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Grape"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Coconut"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Mango"] = 25, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Mango"] = 5, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Dragon Fruit"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Acorn"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Cherry"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
@@ -97,40 +97,37 @@ getgenv().UserConfig = {
     ["Discord ID"] = "Dien_ID_Discord_Cua_Ban",
     
     -- CẤU HÌNH GỬI MAIL (Điền chính xác Username của acc nhận đồ)
-    ["Mail To Username"] = {"numedump"},
+    ["Mail To Username"] = {"Numedump"},
     ["Items To Mail"] = {
         ["Pet"] = {
-        ["Frog"] = {Huge = 99, Rainbow = 99, To = "numedump"},
-        ["Bunny"] = {Huge = 99, Rainbow = 99, To = "numedump"},
-        ["Turtle"] = {Huge = 99, Rainbow = 99, To = "numedump"},
-        ["Owl"] = {Huge = 99, Rainbow = 99, To = "numedump"},
-        ["Deer"] = {Huge = 99, Rainbow = 99, To = "numedump"},
-        ["Robin"] = {Huge = 99, Rainbow = 99, To = "numedump"},
-        ["Bee"] = {Huge = 99, Rainbow = 99, To = "numedump"},
-        ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "numedump"},
-        ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "numedump"},
-        ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "numedump"},
+        ["Frog"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Bunny"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Turtle"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Owl"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Deer"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Robin"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Bee"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Numedump"},
         },
         ["Seed"] = {
             ["Carrot"] = {Amount = 50, To = "numerious0"},
-            ["Mango"] = {Amount = 20, To = "numedump"},
-            ["Pineapple"] = {Amount = 20, To = "numedump"},
-            ["Rainbow"] = {Amount = 2, To = "numedump"},
-            ["Gold"] = {Amount = 5, To = "numedump"},
-            ["Mega"] = {Amount = 2, To = "numedump"},
-            ["Dragon's Breath"] = {Amount = 1, To = "numedump"},
-            ["Moon Bloom"] = {Amount = 1, To = "numedump"},
-		    ["Hypno Bloom"] = {Amount = 1, To = "numedump"},
-        	["Venom Spitter"] = {Amount = 1, To = "numedump"}, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+            ["Rainbow"] = {Amount = 2, To = "Numedump"},
+            ["Gold"] = {Amount = 5, To = "Numedump"},
+            ["Mega"] = {Amount = 2, To = "Numedump"},
+            ["Dragon's Breath"] = {Amount = 1, To = "Numedump"},
+            ["Moon Bloom"] = {Amount = 1, To = "Numedump"},
+		["Hypno Bloom"] = {Amount = 1, To = "Numedump"},
         },
         ["Gear"] = {
-    		["Legendary Sprinkler"] = {Amount = 2, To = "numedump"},
-    		["Super Sprinkler"] = {Amount = 2, To = "numedump"},
-    		["Super Watering Can"] = {Amount = 2, To = "numedump"},
+    		["Legendary Sprinkler"] = {Amount = 2, To = "Numedump"},
+    		["Super Sprinkler"] = {Amount = 2, To = "Numedump"},
+    		["Super Watering Can"] = {Amount = 2, To = "Numedump"},
         },
     },
     ["Claim Mail"] = true,
     ["Auto Plant"] = true,
-    ["Limit Auto Plant"] = 500,
+    ["Limit Auto Plant"] = 450,
     ["Blacklist Seed"] = {"Rainbow"}
 }
