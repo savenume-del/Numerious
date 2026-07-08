@@ -70,11 +70,11 @@ getgenv().UserConfig = {
     ["Auto Collect Seed Packs"] = true,
     ["Gears"] = {
         ["Buy Gear"] = {
-            "Common Watering Can",
-            "Common Sprinkler",
-            "Legendary Sprinkler",
-            "Super Sprinkler",
-            "Super Watering Can",
+            ["Common Watering Can"] = 100, -- Đã sửa thành dạng có điền số lượng
+            ["Common Sprinkler"] = 100,
+            ["Legendary Sprinkler"] = 100,
+            ["Super Sprinkler"] = 100,
+            ["Super Watering Can"] = 100,
         },
         ["Gears To Use"] = {
             "Common Watering Can",
@@ -100,16 +100,15 @@ getgenv().UserConfig = {
     ["Mail To Username"] = {"Numedump"},
     ["Items To Mail"] = {
         ["Pet"] = {
-        ["Frog"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
-        ["Bunny"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
-        ["Turtle"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
-        ["Owl"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
-        ["Deer"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
-        ["Robin"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
-        ["Bee"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
-        ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "Numedump"},
-        ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "Numedump"},
-        ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Numedump"},
+            ["Frog"] = {Huge = 1, Rainbow = 1, To = "Numedump"},
+            ["Bunny"] = {Huge = 1, Rainbow = 1, To = "Numedump"},
+            ["Turtle"] = {Huge = 1, Rainbow = 1, To = "Numedump"},
+            ["Owl"] = {Huge = 1, Rainbow = 1, To = "Numedump"},
+            ["Deer"] = {Huge = 1, Rainbow = 1, To = "Numedump"},
+            ["Robin"] = {Huge = 1, Rainbow = 1, To = "Numedump"},
+            ["Bee"] = {Huge = 1, Rainbow = 1, To = "Numedump"},
+            ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Numedump"}, -- Đã xóa dòng Raccoon bị lặp
+            ["Black Dragon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Numedump"},
         },
         ["Seed"] = {
             ["Carrot"] = {Amount = 50, To = "numerious0"},
@@ -118,12 +117,12 @@ getgenv().UserConfig = {
             ["Mega"] = {Amount = 2, To = "Numedump"},
             ["Dragon's Breath"] = {Amount = 1, To = "Numedump"},
             ["Moon Bloom"] = {Amount = 1, To = "Numedump"},
-		["Hypno Bloom"] = {Amount = 1, To = "Numedump"},
+            ["Hypno Bloom"] = {Amount = 1, To = "Numedump"},
         },
         ["Gear"] = {
-    		["Legendary Sprinkler"] = {Amount = 2, To = "Numedump"},
-    		["Super Sprinkler"] = {Amount = 2, To = "Numedump"},
-    		["Super Watering Can"] = {Amount = 2, To = "Numedump"},
+            ["Legendary Sprinkler"] = {Amount = 2, To = "Numedump"},
+            ["Super Sprinkler"] = {Amount = 2, To = "Numedump"},
+            ["Super Watering Can"] = {Amount = 2, To = "Numedump"},
         },
     },
     ["Claim Mail"] = true,
