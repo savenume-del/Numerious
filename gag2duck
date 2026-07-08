@@ -111,7 +111,6 @@ getgenv().UserConfig = {
             ["Black Dragon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Numedump"},
         },
         ["Seed"] = {
-            ["Carrot"] = {Amount = 50, To = "numerious0"},
             ["Rainbow"] = {Amount = 2, To = "Numedump"},
             ["Gold"] = {Amount = 5, To = "Numedump"},
             ["Mega"] = {Amount = 2, To = "Numedump"},
