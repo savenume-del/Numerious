@@ -152,6 +152,6 @@ getgenv().UserConfig = {
     
     -- [ AUTO PLANT LIMITS ]
     ["Auto Plant"] = true, -- Toggle auto planting feature
-    ["Limit Auto Plant"] = 700, -- Stop auto planting after reaching this limit
+    ["Limit Auto Plant"] = 600, -- Stop auto planting after reaching this limit
     ["Blacklist Seed"] = {"Rainbow"} -- Seeds listed here will NEVER be planted
 }
