@@ -133,7 +133,6 @@ getgenv().UserConfig = {
             ["Rainbow"] = {Amount = 2, To = "numedump"},
             ["Gold"] = {Amount = 10, To = {"numedump"}},
             ["Mega"] = {Amount = 3, To = {"numedump"}},
-            ["Mushroom"] = {Amount = 50, To = {"numedump"}},
             ["Dragon's Breath"] = {Amount = 1, To = "numedump"},
             ["Moon Bloom"] = {Amount = 1, To = "numedump"},
             ["Hypno Bloom"] = {Amount = 1, To = "numedump"},
