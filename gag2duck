@@ -122,10 +122,8 @@ getgenv().UserConfig = {
     ["Items To Mail"] = {
         ["Pet"] = { -- Format: ["Pet Name"] = {Variant = Amount, To = "Receiver_Username"}
             ["Golden Dragonfly"] = {Normal = 2, Big = 1, Huge = 1, Rainbow = 1, To = {"numedump"}},
-            ["Unicorn"] = {Normal = 2, Big = 1, Huge = 1, Rainbow = 1, To = {"numedump"}},
             ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "numedump"},
             ["Black Dragon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "numedump"},
-            ["Bald Eagle"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "numedump"},
             ["Butterfly"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "numedump"},
             ["Firefly"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "numedump"},
         },
