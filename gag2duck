@@ -14,12 +14,40 @@ getgenv().UserConfig = {
     ["Auto Plant Seed"] = true, -- Tự động trồng hạt giống vào ô đất
     
     ["Limit Plant Seed"] = { -- Số lượng hạt giống tối đa trồng cùng lúc (hiếm khi dùng)
-        ["Tulip"] = 1,
+        ["Strawberry"] = 10,
+        ["Blueberry"] = 10,
+        ["Tomato"] = 10,
     },
     
     ["Limit Buy Seed"] = { -- Số lượng hạt giống tối đa mua và giữ trong kho đồ
-        ["Carrot"] = 5, 
+        ["Carrot"] = 0, 
+        ["Strawberry"] = 0,
+        ["Blueberry"] = 0,
+        ["Tulip"] = 0,
+        ["Tomato"] = 0,
+        ["Apple"] = 0,
+        ["Bamboo"] = 0,
+        ["Corn"] = 0,
+        ["Cactus"] = 0,
+        ["Pineapple"] = 0, 
+        ["Mushroom"] = 0, 
+        ["Fire Fern"] = 0, 
+        ["Rocket Pop"] = 0, 
+        ["Green Bean"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Banana"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Grape"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Coconut"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Mango"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Dragon Fruit"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
         ["Acorn"] = 25, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Cherry"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Sunflower"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Venus Fly Trap"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Pomegranate"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Poison Apple"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Venom Spitter"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Briar Rose"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Romanesco"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
         ["Moon Bloom"] = 100,
         ["Hypno Bloom"] = 100,
         ["Dragon's Breath"] = 100,
@@ -36,22 +64,27 @@ getgenv().UserConfig = {
         -- ["Horned Melon"] = {"Rainbow", "Gold"},
     }, 
     
-    ["Harvest Mutation Only"] = { -- Chỉ thu hoạch nếu cây tiến hóa đột biến, còn không thì để nguyên hoặc đào bỏ
-        --"Bamboo",
-        --["Tomato"] = {"Rainbow", "Gold", "Bloodlit", "Electric", "Starstruck", "Frozen", "Aurora"},
-        --"Apple",
+    ["Harvest Mutation Only"] = {
     },
     
     -- [ CẤU HÌNH THÚ NUÔI ]
     ["Buy Pets"] = { -- Số lượng mục tiêu để tự động mua và ấp thú nuôi
-        ["Bunny"] = {Normal = 6, Big = 6, Huge = 6, Rainbow = 6},
-        ["Raccoon"] = 999,
-        ["Black Dragon"] = 999,
-        ["Firefly"] = 100,
+        ["Frog"] = {Huge = 99, Rainbow = 99},
+        ["Bunny"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
+        ["Turtle"] = {Huge = 99, Rainbow = 99},
+        ["Owl"] = {Huge = 99, Rainbow = 99},
+        ["Deer"] = {Huge = 99, Rainbow = 99},
+        ["Robin"] = {Huge = 99, Rainbow = 99},
+        ["Bee"] = {Huge = 99, Rainbow = 99},
+        ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
+        ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
+        ["Bald Eagle"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Butterfly"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Firefly"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
     },
     
     ["Equip Pets"] = { -- Thú nuôi bạn muốn hệ thống tự động mặc
-        {"Bunny", 6, 1},
+        {"Firefly", 6, 1},
     },
     
     -- [ CẤU HÌNH ĐẤT ĐAI & NÂNG CẤP ]
@@ -62,7 +95,7 @@ getgenv().UserConfig = {
     
     -- [ CẤU HÌNH TRANG BỊ ]
     ["Gears"] = {
-        ["Buy Gear"] = { -- Tự động mua trang bị đến số lượng chỉ định
+        ["Buy Gear"] = {
             ["Super Sprinkler"] = 100,
             ["Super Watering Can"] = 100,
         },
@@ -71,62 +104,52 @@ getgenv().UserConfig = {
             "Common Sprinkler",
             "Uncommon Sprinkler",
             "Rare Sprinkler",
-            -- "Legendary Sprinkler",
-            -- "Super Sprinkler",
-            -- "Super Watering Can",
         },
     },
     
     -- [ CẤU HÌNH WEBHOOK DISCORD ] (Thay link của bạn vào phần xxxx để nhận thông báo qua Discord)
-    ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1516873518304722954/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    ["Webhook Pet Name"] = {"Golden Dragonfly","Unicorn","Raccoon","Monkey","Bee","Ice Serpent","Robin","Deer"}, -- Thông báo khi mở ra các pet này
-    ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"}, -- Chỉ thông báo khi đạt các độ hiếm này
+    ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1173760132140761128/zHvJBRN9WO5uH5HYTITBHEe2Fwxe2ZwA_8CuHyLS8PPG2Za_LPJuOB05RMVj09ruWGAa",
+    ["Webhook Pet Name"] = {"Raccoon","Ice Serpent"},
+    ["Webhook Pet Rarity"] = {"Super", "Secret"},
     
     ["Webhook Seed URL"] = "https://discord.com/api/webhooks/1521791543919378442/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    ["Webhook Seed Name"] = {"Rainbow", "Gold", "Mega", "Dragon's Breath", "Hypno Bloom", "Moon Bloom", "Briar Rose", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap"}, -- Thông báo khi thu hoạch/đột biến các hạt này
+    ["Webhook Seed Name"] = {"Rainbow", "Gold", "Mega", "Dragon's Breath", "Hypno Bloom", "Moon Bloom", "Briar Rose", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap"},
     
     ["Webhook Gear URL"] = "https://discord.com/api/webhooks/1521791670570582068/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    ["Webhook Gear Name"] = {"Super Sprinkler", "Super Watering Can", "Legendary Sprinkler"}, -- Thông báo khi mua thành công các món đồ này
+    ["Webhook Gear Name"] = {"Super Sprinkler", "Super Watering Can", "Legendary Sprinkler"},
 
-    ["Webhook Note"] = "Enter_Your_Name", -- Ghi chú/Tên riêng hiển thị trong tin nhắn webhook để phân biệt các acc
-    ["Discord ID"] = "Enter_Your_Discord_ID", -- ID Discord của bạn để bot tự động ping/tag khi có hàng hiếm
+    ["Webhook Note"] = "Dien_Ten_Cua_Ban",
+    ["Discord ID"] = "1519280031334011001",
     
-    -- [ CẤU HÌNH GỬI MAIL ] (Tự động gửi vật phẩm thu hoạch được sang tài khoản chính/acc kho)
-    ["Mail To Username"] = {"Enter_Main_Account_Username"}, -- Tài khoản nhận mặc định nếu các mục dưới không chỉ định tên riêng
+    -- CẤU HÌNH GỬI MAIL (Điền chính xác Username của acc nhận đồ)
+    ["Mail To Username"] = {"numedump"},
     ["Items To Mail"] = {
-        ["Pet"] = { -- Cấu trúc: ["Tên Pet"] = {Hệ/Biến thể = Số lượng, To = "Tên_Acc_Nhận"}
-            ["Golden Dragonfly"] = {Normal = 2, Big = 1, Huge = 1, Rainbow = 1, To = {"numedump"}},
-            ["Unicorn"] = {Normal = 2, Big = 1, Huge = 1, Rainbow = 1, To = {"numedump"}},
-            ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "numedump"},
-            ["Black Dragon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "numedump"},
-            ["Bald Eagle"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "numedump"},
-            ["Butterfly"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "numedump"},
-            ["Firefly"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "numedump"},
+        ["Pet"] = {
+        ["Frog"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Bunny"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Turtle"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Owl"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Deer"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Robin"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Bee"] = {Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "numedump"},
+        ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "numedump"},
         },
-        ["Seed"] = { -- Cấu trúc: ["Tên Hạt"] = {Amount = Số lượng, To = "Tên_Acc_Nhận"}
-            ["Rainbow"] = {Amount = 2, To = "numedump"},
-            ["Gold"] = {Amount = 10, To = {"numedump"}},
-            ["Mega"] = {Amount = 3, To = {"numedump"}},
-            ["Dragon's Breath"] = {Amount = 1, To = "numedump"},
-            ["Moon Bloom"] = {Amount = 1, To = "numedump"},
-            ["Hypno Bloom"] = {Amount = 1, To = "numedump"},
-            ["Fire Fern"] = {Amount = 1, To = "numedump"},
-            ["Rocket Pop"] = {Amount = 10, To = "numedump"}, 
-            ["Sun Bloom"] = {Amount = 1, To = "numedump"},
-            ["Star Fruit"] = {Amount = 1, To = "numedump"},
-            ["Eclipse Bloom"] = {Amount = 1, To = "numedump"},
-            ["Acorn"] = {Amount = 20, To = "Xaluvia2"},
+        ["Seed"] = {
+            ["Mega"] = {Amount = 2, To = "numedump"},
+		["Bamboo"] = {Amount = 60, To = "numedump"},
+		["Rainbow"] = {Amount = 5, To = "numedump"},
+		["Acorn"] = {Amount = 20, To = "numedump"},
         },
-        ["Gear"] = { -- Cấu trúc: ["Tên Đồ"] = {Amount = Số lượng, To = "Tên_Acc_Nhận"}
-            ["Super Sprinkler"] = {Amount = 5, To = {"numedump"}},
-            ["Super Watering Can"] = {Amount = 5, To = {"numedump"}},
-            ["Legendary Sprinkler"] = {Amount = 5, To = {"numedump"}},
+        ["Gear"] = {
+    		["Legendary Sprinkler"] = {Amount = 2, To = "numedump"},
+    		["Super Sprinkler"] = {Amount = 2, To = "numedump"},
+    		["Super Watering Can"] = {Amount = 2, To = "numedump"},
         },
     },
-    ["Claim Mail"] = true, -- Tự động nhận thư/quà từ mail gửi đến
-    
-    -- [ GIỚI HẠN TỰ ĐỘNG TRỒNG CỦA BOT ]
-    ["Auto Plant"] = true, -- Bật tính năng tự động trồng cây
-    ["Limit Auto Plant"] = 600, -- Bot sẽ ngừng trồng cây sau khi số lượng ô đạt giới hạn này
-    ["Blacklist Seed"] = {"Rainbow"} -- Hạt giống nằm trong này sẽ KHÔNG BAO GIỜ bị đem đi trồng
+    ["Claim Mail"] = true,
+    ["Auto Plant"] = true,
+    ["Limit Auto Plant"] = 600,
+    ["Blacklist Seed"] = {"Rainbow", "Gold"}
 }
