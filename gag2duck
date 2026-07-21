@@ -115,6 +115,7 @@ getgenv().UserConfig = {
             ["Sun Bloom"] = {Amount = 1, To = "numedump"},
             ["Star Fruit"] = {Amount = 1, To = "numedump"},
             ["Eclipse Bloom"] = {Amount = 1, To = "numedump"},
+            ["Acorn"] = {Amount = 20, To = "Xaluvia2"},
         },
         ["Gear"] = { -- Cấu trúc: ["Tên Đồ"] = {Amount = Số lượng, To = "Tên_Acc_Nhận"}
             ["Super Sprinkler"] = {Amount = 5, To = {"numedump"}},
