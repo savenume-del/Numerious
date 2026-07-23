@@ -32,7 +32,6 @@ getgenv().UserConfig = {
         ["Fire Fern"] = 5, 
         ["Rocket Pop"] = 300, 
         ["Acorn"] = 200, -- delete these lines if you want to save money, buying these seeds is expensive
-        ["Moon Bloom"] = 100,
         ["Hypno Bloom"] = 100,
         ["Dragon's Breath"] = 100,
         ["Sun Bloom"] = 100,
@@ -115,7 +114,6 @@ getgenv().UserConfig = {
             ["Gold"] = {Amount = 10, To = "Numedump"},
             ["Mega"] = {Amount = 3, To = "Numedump"},
             ["Dragon's Breath"] = {Amount = 1, To = "Numedump"},
-            ["Moon Bloom"] = {Amount = 1, To = "Numedump"},
             ["Hypno Bloom"] = {Amount = 1, To = "Numedump"},
             ["Sun Bloom"] = {Amount = 1, To = "Numedump"},
             ["Acorn"] = {Amount = 10, To = "Numedump"},
