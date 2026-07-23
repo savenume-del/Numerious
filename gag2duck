@@ -116,13 +116,13 @@ getgenv().UserConfig = {
             ["Dragon's Breath"] = {Amount = 1, To = "Numedump"},
             ["Hypno Bloom"] = {Amount = 1, To = "Numedump"},
             ["Sun Bloom"] = {Amount = 1, To = "Numedump"},
-            ["Acorn"] = {Amount = 10, To = "Numedump"},
+            ["Acorn"] = {Amount = 1, To = "Numedump"},
             ["Star Fruit"] = {Amount = 1, To = "Numedump"},
             ["Eclipse Bloom"] = {Amount = 1, To = "Numedump"},
         },
         ["Gear"] = { -- Cấu trúc: ["Tên Đồ"] = {Amount = Số lượng, To = "Tên_Acc_Nhận"}
-            ["Super Sprinkler"] = {Amount = 5, To = "Numedump"},
-            ["Super Watering Can"] = {Amount = 5, To = "Numedump"},
+            ["Super Sprinkler"] = {Amount = 2, To = "Numedump"},
+            ["Super Watering Can"] = {Amount = 2, To = "Numedump"},
         },
     },
     ["Claim Mail"] = true, -- Tự động nhận thư/quà từ mail gửi đến
