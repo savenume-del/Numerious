@@ -59,7 +59,7 @@ getgenv().UserConfig = {
         ["Bunny"] = {Big = 6, Huge = 6, Rainbow = 6},
         ["Raccoon"] = 999,
         ["Black Dragon"] = 999,
-        ["Firefly"] = 100,
+        ["Firefly"] = 6,
     },
     
     ["Equip Pets"] = { -- Thú nuôi bạn muốn hệ thống tự động mặc
@@ -109,7 +109,6 @@ getgenv().UserConfig = {
         ["Pet"] = { -- Cấu trúc: ["Tên Pet"] = {Hệ/Biến thể = Số lượng, To = "Tên_Acc_Nhận"}
             ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Numedump"},
             ["Black Dragon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Numedump"},
-            ["Firefly"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Numedump"},
         },
         ["Seed"] = { -- Cấu trúc: ["Tên Hạt"] = {Amount = Số lượng, To = "Tên_Acc_Nhận"}
             ["Rainbow"] = {Amount = 2, To = "Numedump"},
