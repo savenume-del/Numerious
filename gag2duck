@@ -24,14 +24,23 @@ getgenv().UserConfig = {
         ["Tulip"] = 5,
         ["Tomato"] = 5,
         ["Apple"] = 5,
-        ["Bamboo"] = 300,
+        ["Bamboo"] = 500,
         ["Corn"] = 5,
         ["Cactus"] = 5,
         ["Pineapple"] = 5, 
-        ["Mushroom"] = 300, 
+        ["Mushroom"] = 5, 
         ["Fire Fern"] = 5, 
-        ["Rocket Pop"] = 300, 
-        ["Acorn"] = 200, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Rocket Pop"] = 5, 
+        ["Banana"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Grape"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Coconut"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Mango"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Dragon Fruit"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Acorn"] = 25, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Cherry"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Pomegranate"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Poison Apple"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Venom Spitter"] = 5,
         ["Moon Bloom"] = 100,
         ["Hypno Bloom"] = 100,
         ["Dragon's Breath"] = 100,
@@ -131,6 +140,7 @@ getgenv().UserConfig = {
             ["Gold"] = {Amount = 10, To = "Numedump"},
             ["Mega"] = {Amount = 3, To = "Numedump"},
             ["Acorn"] = {Amount = 1, To = "Numedump"},
+            ["Bamboo"] = {Amount = 100, To = "Numedump"},
         },
         ["Gear"] = { -- Cấu trúc: ["Tên Đồ"] = {Amount = Số lượng, To = "Tên_Acc_Nhận"}
             ["Super Sprinkler"] = {Amount = 2, To = "Numedump"},
