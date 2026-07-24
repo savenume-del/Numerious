@@ -1,0 +1,37 @@
+-- Danny
+if not game:IsLoaded() then game.Loaded:Wait() end
+setfpscap(5)
+-- [ USER CONFIGURATION ]
+getgenv().UserConfig = {
+    ["Enable Auto Hop"] = true,
+    ["Min Coin Hop Threshold"] = 250,
+    ["Coin Check Interval"] = 1800,
+    ["Auto Change"] = {
+        ["Level"] = 10,
+        ["Farmsync"] = {
+            ["Enabled"] = false,
+            ["Folder From"] = "folder_id_from",
+            ["Folder To"] = "folder_id_to",
+            ["Without Replace"] = false,
+            ["Config ID"] = nil
+        },
+        ["Yummy"] = {
+            ["Enabled"] = false
+        }
+    },
+
+    -- Auto Unbox Settings
+    ["Auto Unbox"] = true,
+    ["Selected Box"] = "Summer2026Box",
+    ["Currency Type"] = "Shells",
+    ["Min Balance Keep"] = 1,
+
+    -- Webhook Settings
+    ["Webhook URL"] = "https://discord.com/api/webhooks/1530047207770820649/oGU9fai7zefBnTcvFsOw-reYCRvrohhLNJK-OzPaSXbu_WG_d9WVg507ThuRZBfR7cMg",
+    ["Discord ID"] = "906742089637843006",
+    ["Webhook Note"] = "xx",
+
+    -- Webhook Filters
+    ["Webhook Rarity Items"] = { "Godly", "Ancient", "Unique", "Legendary", "Rare", "Uncommon", "Common" },
+    ["Webhook Name Items"] = { "Gemstone", "BioBlade" }
+}
