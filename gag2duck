@@ -32,6 +32,7 @@ getgenv().UserConfig = {
         ["Fire Fern"] = 5, 
         ["Rocket Pop"] = 300, 
         ["Acorn"] = 200, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Moon Bloom"] = 100,
         ["Hypno Bloom"] = 100,
         ["Dragon's Breath"] = 100,
         ["Sun Bloom"] = 100,
@@ -55,10 +56,18 @@ getgenv().UserConfig = {
     
     -- [ CẤU HÌNH THÚ NUÔI ]
     ["Buy Pets"] = { -- Số lượng mục tiêu để tự động mua và ấp thú nuôi
-        ["Bunny"] = {Big = 6, Huge = 6, Rainbow = 6},
-        ["Raccoon"] = 999,
-        ["Black Dragon"] = 999,
-        ["Firefly"] = 6,
+        ["Frog"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Bunny"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Turtle"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Owl"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Deer"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Robin"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Bee"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
+        ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
+        ["Bald Eagle"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Butterfly"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Firefly"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
     },
     
     ["Equip Pets"] = { -- Thú nuôi bạn muốn hệ thống tự động mặc
@@ -106,19 +115,22 @@ getgenv().UserConfig = {
     ["Mail To Username"] = {"Numedump"}, -- Tài khoản nhận mặc định nếu các mục dưới không chỉ định tên riêng
     ["Items To Mail"] = {
         ["Pet"] = { -- Cấu trúc: ["Tên Pet"] = {Hệ/Biến thể = Số lượng, To = "Tên_Acc_Nhận"}
-            ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Numedump"},
-            ["Black Dragon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Numedump"},
+        ["Frog"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Bunny"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Turtle"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Owl"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Deer"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Robin"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Bee"] = {Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "Numedump"},
+        ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "Numedump"},
         },
+
         ["Seed"] = { -- Cấu trúc: ["Tên Hạt"] = {Amount = Số lượng, To = "Tên_Acc_Nhận"}
             ["Rainbow"] = {Amount = 2, To = "Numedump"},
             ["Gold"] = {Amount = 10, To = "Numedump"},
             ["Mega"] = {Amount = 3, To = "Numedump"},
-            ["Dragon's Breath"] = {Amount = 1, To = "Numedump"},
-            ["Hypno Bloom"] = {Amount = 1, To = "Numedump"},
-            ["Sun Bloom"] = {Amount = 1, To = "Numedump"},
             ["Acorn"] = {Amount = 1, To = "Numedump"},
-            ["Star Fruit"] = {Amount = 1, To = "Numedump"},
-            ["Eclipse Bloom"] = {Amount = 1, To = "Numedump"},
         },
         ["Gear"] = { -- Cấu trúc: ["Tên Đồ"] = {Amount = Số lượng, To = "Tên_Acc_Nhận"}
             ["Super Sprinkler"] = {Amount = 2, To = "Numedump"},
